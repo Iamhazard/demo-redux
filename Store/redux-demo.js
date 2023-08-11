@@ -1,18 +1,20 @@
-const redux = require("redux");
+// import { createStore } from "redux";
 
-const counterReducer = (state = { counter: 0 }, action) => {
-  return {
-    counter: state.counter + 1,
-  };
-};
+// const redux = require("redux");
 
-const store = redux.createStore(counterReducer);
+// const counterReducer = (state = { counter: 0 }, action) => {
+//   return {
+//     counter: state.counter + 1,
+//   };
+// };
 
-const counterSubscriber = () => {
-  const latestState = store.getState();
-  console.log(latestState);
-};
+// const store = redux.createStore(counterReducer);
 
-store.subscribe(counterSubscriber);
+// const counterSubscriber = () => {
+//   const latestState = store.getState();
+//   console.log(latestState);
+// };
 
-store.dispatch({ type: "increment" });
+// store.subscribe(counterSubscriber);
+
+// store.dispatch({ type: "increment" });
